@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.music-player {
+    background: #1c1c1c;
+    border: 2px solid #3a3a3a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.controls, .volume-control, .track-sources {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.control-btn:hover {
+    color: #ff0043;
+}
+
+.track-info {
+    margin-bottom: 20px;
+}
+
+#track-title {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #ff0043;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #3a3a3a;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff0043;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ff0043;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.track-sources input {
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    background: #2b2b2b;
+    color: white;
+}
+
+.track-sources button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff0043;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.track-sources button:hover {
+    background: #cc0036;
+}
